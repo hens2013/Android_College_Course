@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Car Game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_the_car_game">Welcome To The Car Game</string>
+    <string name="select_game_mode">Select game mode</string>
+    <string name="sensor_mode">Sensor mode</string>
+    <string name="buttons_mode">Buttons mode</string>
+    <string name="select_game_speed">Select game speed</string>
+    <string name="choose_game_mode">Choose game mode</string>
+    <string name="sensor">Using the phone sensor</string>
+    <string name="using_the_buttons">Using the buttons</string>
+    <string name="start_game">Start Game</string>
+    <string name="scores">Scores</string>
+    <string name="fast">Fast</string>
+    <string name="slow">Slow</string>
+</resources>

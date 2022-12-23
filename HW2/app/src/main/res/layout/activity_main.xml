@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AB8A83"
+    tools:context=".Activity.MainActivity">
+
+    <TextView
+        android:id="@+id/txtTile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/welcome_to_the_car_game"
+        android:textColor="#92B02D"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtSpeedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rBtnModeOptions"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:text="@string/select_game_speed"
+        android:textColor="#92B02D"
+        android:textSize="18sp"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/rBtnSpeedOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSpeedTitle"
+        android:layout_marginLeft="30dp"
+        android:checkedButton="@id/rBtnSpeedSlow"
+
+        >
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rBtnSpeedSlow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slow"
+            android:textColor="#FFFFFF" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rBtnSpeedFast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fast"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtModeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/choose_game_mode"
+        android:textColor="#92B02D"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rBtnModeOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtModeTitle"
+        android:layout_marginLeft="30dp"
+        android:checkedButton="@id/rBtn_sensor"
+
+        >
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rBtn_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sensor"
+            android:textColor="#FFFFFF" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rBtn_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/using_the_buttons"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_startGame"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rBtnSpeedOptions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/start_game"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="10dp"
+        app:strokeColor="#92B02D"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_scores"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_startGame"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/scores"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="10dp"
+        app:strokeColor="#92B02D"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>
